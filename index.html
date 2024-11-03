@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        #container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .contact {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+        .contact b {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .contact p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Contact List</h1>
+        <h2>Filter by Name</h2>
+        <input type="text" id="filter-input" placeholder="Enter name to filter:">
+        <button id="filter-button">Filter</button>
+        <div id="contact-List"></div>
+    </div>
+
+    <script>
+      const contacts = [
+        { id: 1, name: "Asfiya", gmail: "asfiyarudbar@gmail.com" },
+        { id: 2, name: "Sarah", gmail: "sarahkhan55@gmail.com" },
+        { id: 3, name: "Habiba", gmail: "habibatauqeer591@gmail.com" },
+      ];
+
+      function renderContacts(contacts) {
+        const contactList = document.getElementById("contact-List");
+        contactList.innerHTML = "";
+        for (const contact of contacts) {
+          const contactDiv = document.createElement("div");
+          contactDiv.className = "contact"; // Corrected class name
+          contactDiv.innerHTML = `
+            <b>${contact.name}</b>
+            <p>${contact.gmail}</p>
+          `;
+          contactList.appendChild(contactDiv);
+        }
+      }
+
+      function filterContacts() {
+        const filterInput = document.getElementById("filter-input").value.toLowerCase();
+        const filteredContacts = contacts.filter(contact => 
+          contact.name.toLowerCase().includes(filterInput)
+        );
+        renderContacts(filteredContacts);
+      }
+
+      renderContacts(contacts);
+      document.getElementById('filter-button').addEventListener('click', filterContacts);
+      document.getElementById('filter-input').addEventListener('input', filterContacts); // Real-time filtering
+
+    </script>
+</body>
+</html>

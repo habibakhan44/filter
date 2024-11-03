@@ -1,0 +1,149 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+#container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    text-align: center;
+}
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.contact {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.contact b {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.contact p {
+    margin: 0;
+    color: #555;
+} */
+/* 
+@media (max-width: 600px) {
+    .contact {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+
+    input {
+        width: calc(100% - 20px); 
+        margin-right: 0; 
+    }
+
+    button {
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    input {
+        width: 100%}
+
+    button {
+        width: auto; 
+    }
+} */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+#container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.contact b {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact p {
+    margin: 0;
+    color: #555;
+}
